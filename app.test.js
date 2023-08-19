@@ -26,10 +26,10 @@ test("pass euros to dollars to yen ", function(){
     const yen = fromDollarToYen(3.5)
 
     
-    const expected = 3.5 * 1.2 * 127.9; 
+    const expected = 3.5 / 1.2 * 127.9; 
     
  
-     expect(fromDollarToYen(3.5)).toBe(537.1800000000001); //1 euro are 1.2 dolares, then 3.5 euros should be = (3.5 * 1.2)
+     expect(fromDollarToYen(3.5)).toBe(373.04166666666674); //1 euro are 1.2 dolares, then 3.5 euros should be = (3.5 * 1.2)
 })
 test("pass yen to pounds", function(){
 
